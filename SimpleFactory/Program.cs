@@ -6,7 +6,11 @@ namespace SimpleFactory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var pizzaStore = new PizzaStore(new SimplePizzaFactory());
+            var cheesePizza = pizzaStore.OrderPizza("cheese");
+            Console.WriteLine();
+            var clamPizza = pizzaStore.OrderPizza("pepperoni");
+            Console.ReadKey();
         }
     }
 }
