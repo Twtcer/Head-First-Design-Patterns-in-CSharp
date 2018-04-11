@@ -1,2 +1,2 @@
-# .NETCoreDesignPatterns
-.net core design patterns
+# Head First Design Patterns in C# (.NET Core)
+Still coding...
