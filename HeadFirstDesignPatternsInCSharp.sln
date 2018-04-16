@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern", "Singlet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPattern", "CommandPattern\CommandPattern.csproj", "{33D47403-7F7A-41E1-8DA7-E0B253FF5CB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterPattern", "AdapterPattern\AdapterPattern.csproj", "{F135E211-A746-4E53-BAEB-AA0815C08BCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -124,6 +126,18 @@ Global
 		{33D47403-7F7A-41E1-8DA7-E0B253FF5CB8}.Release|x64.Build.0 = Release|x64
 		{33D47403-7F7A-41E1-8DA7-E0B253FF5CB8}.Release|x86.ActiveCfg = Release|x86
 		{33D47403-7F7A-41E1-8DA7-E0B253FF5CB8}.Release|x86.Build.0 = Release|x86
+		{F135E211-A746-4E53-BAEB-AA0815C08BCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F135E211-A746-4E53-BAEB-AA0815C08BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F135E211-A746-4E53-BAEB-AA0815C08BCC}.Debug|x64.ActiveCfg = Debug|x64
+		{F135E211-A746-4E53-BAEB-AA0815C08BCC}.Debug|x64.Build.0 = Debug|x64
+		{F135E211-A746-4E53-BAEB-AA0815C08BCC}.Debug|x86.ActiveCfg = Debug|x86
+		{F135E211-A746-4E53-BAEB-AA0815C08BCC}.Debug|x86.Build.0 = Debug|x86
+		{F135E211-A746-4E53-BAEB-AA0815C08BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F135E211-A746-4E53-BAEB-AA0815C08BCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F135E211-A746-4E53-BAEB-AA0815C08BCC}.Release|x64.ActiveCfg = Release|x64
+		{F135E211-A746-4E53-BAEB-AA0815C08BCC}.Release|x64.Build.0 = Release|x64
+		{F135E211-A746-4E53-BAEB-AA0815C08BCC}.Release|x86.ActiveCfg = Release|x86
+		{F135E211-A746-4E53-BAEB-AA0815C08BCC}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
