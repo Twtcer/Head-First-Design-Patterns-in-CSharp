@@ -4,11 +4,11 @@ using IteratorPattern.MenuIterators;
 
 namespace IteratorPattern.Menus
 {
-    public class PancakeHouseMenu: IMenu
+    public class MyPancakeHouseMenu
     {
         public ArrayList MenuItems { get; }
 
-        public PancakeHouseMenu()
+        public MyPancakeHouseMenu()
         {
             MenuItems = new ArrayList();
             AddItem("K&B’s Pancake Breakfast", "Pancakes with scrambled eggs, and toast", true, 2.99);
@@ -23,9 +23,9 @@ namespace IteratorPattern.Menus
             MenuItems.Add(menuItem);
         }
 
-        public IEnumerator CreateIEnumerator()
+        public IMyIterator CreateIterator()
         {
-            return new PancakeHouseMenuIterator(MenuItems);
+            return new MyPancakeHouseMenuIterator(MenuItems);
         }
     }
 }

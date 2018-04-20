@@ -1,24 +1,25 @@
-﻿using IteratorPattern.Abstractions;
-using IteratorPattern.Menus;
+﻿using System.Collections;
+using IteratorPattern.Abstractions;
 
 namespace IteratorPattern.MenuIterators
 {
-    public class MyDinerMenuIterator: IMyIterator
+    public class MyPancakeHouseMenuIterator:IMyIterator
     {
-        private readonly MenuItem[] _menuItems;
+        private readonly ArrayList _menuItems;
         private int _position;
 
-        public MyDinerMenuIterator(MenuItem[] menuItems)
+        public MyPancakeHouseMenuIterator(ArrayList menuItems)
         {
             _menuItems = menuItems;
         }
 
         public bool HasNext()
         {
-            if (_position >= _menuItems.Length || _menuItems[_position] == null)
+            if (_position >= _menuItems.Count || _menuItems[_position] == null)
             {
                 return false;
             }
+            _position++;
             return true;
         }
 

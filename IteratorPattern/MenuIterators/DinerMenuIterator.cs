@@ -1,20 +1,22 @@
-﻿using IteratorPattern.Abstractions;
+﻿using System;
+using System.Collections;
 using IteratorPattern.Menus;
 
 namespace IteratorPattern.MenuIterators
 {
-    public class MyDinerMenuIterator: IMyIterator
+    public class DinerMenuIterator: IEnumerator
     {
         private readonly MenuItem[] _menuItems;
-        private int _position;
+        private int _position = -1;
 
-        public MyDinerMenuIterator(MenuItem[] menuItems)
+        public DinerMenuIterator(MenuItem[] menuItems)
         {
             _menuItems = menuItems;
         }
 
-        public bool HasNext()
+        public bool MoveNext()
         {
+            _position++;
             if (_position >= _menuItems.Length || _menuItems[_position] == null)
             {
                 return false;
@@ -22,11 +24,11 @@ namespace IteratorPattern.MenuIterators
             return true;
         }
 
-        public object Next()
+        public void Reset()
         {
-            var menuItem = _menuItems[_position];
-            _position++;
-            return menuItem;
+            _position = -1;
         }
+
+        public object Current => _menuItems[_position];
     }
 }

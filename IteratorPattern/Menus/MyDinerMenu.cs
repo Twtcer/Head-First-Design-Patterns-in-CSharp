@@ -1,17 +1,18 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
+using System.Text;
 using IteratorPattern.Abstractions;
 using IteratorPattern.MenuIterators;
 
 namespace IteratorPattern.Menus
 {
-    public class DinerMenu: IMenu
+    public class MyDinerMenu
     {
         private const int MaxItems = 6;
         private int _numberOfItems = 0;
         private MenuItem[] MenuItems { get; }
 
-        public DinerMenu()
+        public MyDinerMenu()
         {
             MenuItems = new MenuItem[MaxItems];
             AddItem("Vegetarian BLT", "(Fakin’) Bacon with lettuce & tomato on whole wheat", true, 2.99);
@@ -34,9 +35,9 @@ namespace IteratorPattern.Menus
             }
         }
 
-        public IEnumerator CreateIEnumerator()
+        public IMyIterator CreateIterator()
         {
-            return new DinerMenuIterator(MenuItems);
+            return new MyDinerMenuIterator(MenuItems);
         }
     }
 }
